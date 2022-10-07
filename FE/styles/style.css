@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.header{
+    width: 300px;
+    background: rgb(95, 95, 240);
+    height: 70px;
+    text-align: start;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+.header h2{
+    margin-left:20px;
+    margin-top: 15px;
+}
+#__next{
+margin: 0;
+width: 100%;
+min-height: 870px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: grey;
+height: 100vh;
+}
+.form{
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.form form{
+    margin-top: 25px;
+    margin-left: 15px;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+}
+
+form input{
+    margin-top: 5px;
+}
+.addInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+.addInput input {
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    border: 1px solid grey;
+    border-radius:10px 10px 10px 10px;
+    height: 30px;
+    width: 250px;
+}
+.addInput button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(95, 95, 240);
+    border-radius: 20px 20px 20px 20px;
+    background: rgb(95, 95, 240);
+}
+.radio{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.input label{
+    font-size: 20px;
+    color:black;
+    margin-left: 15px;
+    font-family: "Roboto", sans-serif;
+}
+.img svg{
+    margin-left: 5px;
+}
+.dataLength{
+    border: 1px solid black;
+    background: black;
+    color: #fff;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+}
