@@ -30,7 +30,22 @@ const createList = (req, res) => {
     console.error(error);
   }
 };
+const deleteList = async (req, res) => {
+  const { id } = req.params;
+  await Lists.findByIdAndDelete(id);
+  try {
+    res.json({
+      success: true,
+      data: "deleted",
+    });
+  } catch (error) {
+    res.json({
+      success: false,
+      data: error,
+    });
+  }
+};
 
 
 
-module.exports = { getLists, createList };
+module.exports = { getLists, createList, deleteList };

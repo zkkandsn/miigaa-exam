@@ -6,7 +6,7 @@ import { MdDelete } from "react-icons/md";
 
 export default function List() {
   const [add, setAdd] = useState();
-  const listsApi = "http://localhost:3000/list";
+  const listsApi = "https://miigaa.ilearn.mn/list";
   const fetcher = async (url) =>
     await axios.get(url).then((res) => {
       return res.data.data;
@@ -16,7 +16,7 @@ export default function List() {
     e.preventDefault();
     const list = e.target[0].value;
     axios
-      .post("http://localhost:3000/list", {
+      .post("https://miigaa.ilearn.mn/list", {
         list: list,
       })
       .then((res) => {
